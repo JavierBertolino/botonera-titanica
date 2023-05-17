@@ -1,3 +1,4 @@
+require('dotenv').config()
 const { GatewayIntentBits } = require('discord.js');
 const commands = require('./commands');
 const controls = require('./controls');
@@ -40,4 +41,4 @@ client.on('interactionCreate', async interaction => {
     }
 });
 
-client.login("MTEwODIyNTc2NTk0ODAwNjQ1Mw.Gc0kTZ.odQwVXII3KIE4lcDua0V73qB6otNVZLy_h11TU");
+client.login(process.env.BOT_TOKEN);

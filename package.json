@@ -19,9 +19,8 @@
   "homepage": "https://github.com/JavierBertolino/botonera-titanica#readme",
   "dependencies": {
     "discord.js": "^13.1.0",
-    "node-fetch": "^2.6.6",
-    "youtube-sr": "^5.0.1",
-    "soundcloud-scraper": "^5.7.5"
+    "soundcloud-scraper": "^5.0.3",
+    "youtube-sr": "^4.3.4"
   },
   "engines": {
     "node": "16.x"
