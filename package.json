@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -17,9 +18,12 @@
   },
   "homepage": "https://github.com/JavierBertolino/botonera-titanica#readme",
   "dependencies": {
-    "discord.js": "^14.11.0",
-    "node-fetch": "^3.3.1",
-    "soundcloud-scraper": "^5.0.3",
-    "youtube-sr": "^4.3.4"
+    "discord.js": "^13.1.0",
+    "node-fetch": "^2.6.6",
+    "youtube-sr": "^5.0.1",
+    "soundcloud-scraper": "^5.7.5"
+  },
+  "engines": {
+    "node": "16.x"
   }
 }

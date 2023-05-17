@@ -1,16 +1,25 @@
-const Discord = require('discord.js');
+const { GatewayIntentBits } = require('discord.js');
 const commands = require('./commands');
 const controls = require('./controls');
 const { playMusic } = require('./utils');
+const { Client } = require('discord.js');
 
-const client = new Discord.Client();
-const prefix = "!";
+const client = new Client({
+    intents: [
+        GatewayIntentBits.Guilds,
+        GatewayIntentBits.GuildMessages,
+        GatewayIntentBits.MessageContent,
+        GatewayIntentBits.GuildMessageReactions,
+    ]
+});
+const prefix = "&";
 
 client.once('ready', () => {
     console.log('Bot is online!');
 });
 
 client.on('message', async message => {
+    console.log("LLEGO!", message)
     if (!message.content.startsWith(prefix) || message.author.bot) return;
 
     const args = message.content.slice(prefix.length).trim().split(/ +/);
@@ -31,4 +40,4 @@ client.on('interactionCreate', async interaction => {
     }
 });
 
-client.login(process.env.BOT_TOKEN);
+client.login("MTEwODIyNTc2NTk0ODAwNjQ1Mw.Gc0kTZ.odQwVXII3KIE4lcDua0V73qB6otNVZLy_h11TU");

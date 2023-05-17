@@ -1,5 +1,4 @@
 const { MessageActionRow, MessageButton } = require('discord.js');
-const fetch = require('node-fetch');
 const SoundCloud = require('soundcloud-scraper');
 
 let playCommands = {};
